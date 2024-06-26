@@ -1,3 +1,3 @@
-D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CMakeFiles/CH32V305_DAP.elf.dir
+D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CMakeFiles/CH32V307.elf.dir
 D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

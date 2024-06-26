@@ -11,8 +11,8 @@
 # =============================================================================
 
 # =============================================================================
-# Project: CH32V305_DAP
-# Configurations: 
+# Project: CH32V307
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -36,336 +41,337 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/cprogram/CH32V307_base_project_clion/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target CH32V305_DAP.elf
+# Object build statements for EXECUTABLE target CH32V307.elf
 
 
 #############################################
-# Order-only phony target for CH32V305_DAP.elf
+# Order-only phony target for CH32V307.elf
 
-build cmake_object_order_depends_target_CH32V305_DAP.elf: phony || CMakeFiles/CH32V305_DAP.elf.dir
+build cmake_object_order_depends_target_CH32V307.elf: phony || CMakeFiles/CH32V307.elf.dir
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Core/core_riscv.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Core/core_riscv.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Core\core_riscv.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Core/core_riscv.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Core/core_riscv.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Core\core_riscv.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Core
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Core
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Debug/debug.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Debug/debug.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Debug\debug.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Debug/debug.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Debug/debug.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Debug\debug.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Debug
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Debug
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_adc.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_adc.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_adc.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_adc.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_adc.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_adc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_bkp.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_bkp.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_bkp.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_bkp.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_bkp.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_bkp.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_can.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_can.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_can.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_can.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_can.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_can.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_crc.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_crc.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_crc.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_crc.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_crc.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_crc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dac.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dac.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_dac.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dac.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dac.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_dac.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dbgmcu.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dbgmcu.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_dbgmcu.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dbgmcu.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dbgmcu.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_dbgmcu.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dma.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dma.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_dma.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dma.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dma.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_dma.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dvp.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dvp.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_dvp.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dvp.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_dvp.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_dvp.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_eth.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_eth.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_eth.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_eth.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_eth.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_eth.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_exti.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_exti.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_exti.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_exti.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_exti.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_exti.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_flash.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_flash.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_flash.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_flash.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_flash.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_flash.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_fsmc.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_fsmc.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_fsmc.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_fsmc.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_fsmc.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_fsmc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_gpio.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_gpio.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_gpio.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_gpio.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_gpio.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_gpio.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_i2c.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_i2c.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_i2c.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_i2c.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_i2c.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_i2c.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_iwdg.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_iwdg.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_iwdg.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_iwdg.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_iwdg.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_iwdg.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_misc.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_misc.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_misc.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_misc.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_misc.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_misc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_opa.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_opa.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_opa.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_opa.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_opa.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_opa.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_pwr.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_pwr.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_pwr.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_pwr.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_pwr.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_pwr.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_rcc.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_rcc.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_rcc.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_rcc.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_rcc.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_rcc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_rng.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_rng.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_rng.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_rng.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_rng.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_rng.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_rtc.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_rtc.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_rtc.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_rtc.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_rtc.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_rtc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_sdio.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_sdio.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_sdio.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_sdio.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_sdio.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_sdio.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_spi.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_spi.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_spi.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_spi.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_spi.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_spi.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_tim.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_tim.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_tim.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_tim.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_tim.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_tim.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_usart.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_usart.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_usart.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_usart.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_usart.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_usart.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_wwdg.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_wwdg.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src\ch32v30x_wwdg.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_wwdg.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Peripheral/src/ch32v30x_wwdg.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Peripheral\src\ch32v30x_wwdg.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Peripheral\src
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Peripheral\src
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/Startup/startup_ch32v30x_D8C.S.obj: ASM_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/Startup/startup_ch32v30x_D8C.S || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\Startup\startup_ch32v30x_D8C.S.obj.d
-  FLAGS = -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized
+build CMakeFiles/CH32V307.elf.dir/Startup/startup_ch32v30x_D8C.S.obj: ASM_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/Startup/startup_ch32v30x_D8C.S || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\Startup\startup_ch32v30x_D8C.S.obj.d
+  FLAGS = -g -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\Startup
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\Startup
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/User/ch32v30x_it.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/User/ch32v30x_it.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\User\ch32v30x_it.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/User/ch32v30x_it.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/User/ch32v30x_it.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\User\ch32v30x_it.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\User
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\User
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/User/main.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/User/main.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\User\main.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/User/main.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/User/main.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\User\main.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\User
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\User
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/User/system_ch32v30x.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/User/system_ch32v30x.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\User\system_ch32v30x.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/User/system_ch32v30x.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/User/system_ch32v30x.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\User\system_ch32v30x.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\User
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\User
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/midware/self_check.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/midware/self_check.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\midware\self_check.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/midware/self_check.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/midware/self_check.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\midware\self_check.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\midware
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\midware
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
-build CMakeFiles/CH32V305_DAP.elf.dir/midware/system_interface_manage.c.obj: C_COMPILER__CH32V305_DAP.2eelf_ D$:/cprogram/CH32V307_base_project_clion/midware/system_interface_manage.c || cmake_object_order_depends_target_CH32V305_DAP.elf
-  DEP_FILE = CMakeFiles\CH32V305_DAP.elf.dir\midware\system_interface_manage.c.obj.d
-  FLAGS = -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
+build CMakeFiles/CH32V307.elf.dir/midware/system_interface_manage.c.obj: C_COMPILER__CH32V307.2eelf_Debug D$:/cprogram/CH32V307_base_project_clion/midware/system_interface_manage.c || cmake_object_order_depends_target_CH32V307.elf
+  DEP_FILE = CMakeFiles\CH32V307.elf.dir\midware\system_interface_manage.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -march=rv32imacxw -mabi=ilp32 -msmall-data-limit=8 -msave-restore -O0 -g -gdwarf-2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-common -Wunused -Wuninitialized -std=gnu11
   INCLUDES = -ID:/cprogram/CH32V307_base_project_clion/Core -ID:/cprogram/CH32V307_base_project_clion/Debug -ID:/cprogram/CH32V307_base_project_clion/Peripheral/inc -ID:/cprogram/CH32V307_base_project_clion/User -ID:/cprogram/CH32V307_base_project_clion/midware
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles\CH32V305_DAP.elf.dir\midware
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\CH32V307.elf.dir\midware
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_PDB = CH32V307.elf.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CH32V305_DAP.elf
+# Link build statements for EXECUTABLE target CH32V307.elf
 
 
 #############################################
-# Link the executable CH32V305_DAP.elf
+# Link the executable CH32V307.elf
 
-build CH32V305_DAP.elf: C_EXECUTABLE_LINKER__CH32V305_DAP.2eelf_ CMakeFiles/CH32V305_DAP.elf.dir/Core/core_riscv.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Debug/debug.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_adc.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_bkp.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_can.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_crc.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dac.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dbgmcu.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dma.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_dvp.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_eth.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_exti.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_flash.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_fsmc.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_gpio.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_i2c.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_iwdg.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_misc.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_opa.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_pwr.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_rcc.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_rng.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_rtc.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_sdio.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_spi.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_tim.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_usart.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Peripheral/src/ch32v30x_wwdg.c.obj CMakeFiles/CH32V305_DAP.elf.dir/Startup/startup_ch32v30x_D8C.S.obj CMakeFiles/CH32V305_DAP.elf.dir/User/ch32v30x_it.c.obj CMakeFiles/CH32V305_DAP.elf.dir/User/main.c.obj CMakeFiles/CH32V305_DAP.elf.dir/User/system_ch32v30x.c.obj CMakeFiles/CH32V305_DAP.elf.dir/midware/self_check.c.obj CMakeFiles/CH32V305_DAP.elf.dir/midware/system_interface_manage.c.obj
-  LINK_FLAGS = -march=rv32imacxw -mabi=ilp32 -T D:/cprogram/CH32V307_base_project_clion/Ld/Link.ld -nostartfiles -Xlinker --gc-sections -lm -Wl,--print-memory-usage -Wl,-Map,D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.map --specs=nano.specs --specs=nosys.specs
-  OBJECT_DIR = CMakeFiles\CH32V305_DAP.elf.dir
-  POST_BUILD = cmd.exe /C "cd /D D:\cprogram\CH32V307_base_project_clion\cmake-build-debug && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-objcopy.exe" -Oihex D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.elf D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.hex && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-objcopy.exe" -Obinary D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.elf D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.bin && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-objdump.exe" --all-headers --demangle --disassemble D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.elf > D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.lst && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-size.exe" --format=berkeley D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V305_DAP.elf"
+build CH32V307.elf: C_EXECUTABLE_LINKER__CH32V307.2eelf_Debug CMakeFiles/CH32V307.elf.dir/Core/core_riscv.c.obj CMakeFiles/CH32V307.elf.dir/Debug/debug.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_adc.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_bkp.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_can.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_crc.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dac.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dbgmcu.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dma.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_dvp.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_eth.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_exti.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_flash.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_fsmc.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_gpio.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_i2c.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_iwdg.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_misc.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_opa.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_pwr.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_rcc.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_rng.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_rtc.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_sdio.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_spi.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_tim.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_usart.c.obj CMakeFiles/CH32V307.elf.dir/Peripheral/src/ch32v30x_wwdg.c.obj CMakeFiles/CH32V307.elf.dir/Startup/startup_ch32v30x_D8C.S.obj CMakeFiles/CH32V307.elf.dir/User/ch32v30x_it.c.obj CMakeFiles/CH32V307.elf.dir/User/main.c.obj CMakeFiles/CH32V307.elf.dir/User/system_ch32v30x.c.obj CMakeFiles/CH32V307.elf.dir/midware/self_check.c.obj CMakeFiles/CH32V307.elf.dir/midware/system_interface_manage.c.obj
+  FLAGS = -g
+  LINK_FLAGS = -march=rv32imacxw -mabi=ilp32 -T D:/cprogram/CH32V307_base_project_clion/Ld/Link.ld -nostartfiles -Xlinker --gc-sections -lm -Wl,--print-memory-usage -Wl,-Map,D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.map --specs=nano.specs --specs=nosys.specs
+  OBJECT_DIR = CMakeFiles\CH32V307.elf.dir
+  POST_BUILD = cmd.exe /C "cd /D D:\cprogram\CH32V307_base_project_clion\cmake-build-debug && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-objcopy.exe" -Oihex D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.elf D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.hex && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-objcopy.exe" -Obinary D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.elf D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.bin && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-objdump.exe" --all-headers --demangle --disassemble D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.elf > D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.lst && "C:\MounRiver\MounRiver_Studio\toolchain\RISC-V Embedded GCC\bin\riscv-none-embed-size.exe" --format=berkeley D:/cprogram/CH32V307_base_project_clion/cmake-build-debug/CH32V307.elf"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\CH32V305_DAP.elf.dir\
-  TARGET_FILE = CH32V305_DAP.elf
-  TARGET_PDB = CH32V305_DAP.elf.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\CH32V307.elf.dir\
+  TARGET_FILE = CH32V307.elf
+  TARGET_PDB = CH32V307.elf.pdb
 
 
 #############################################
@@ -401,7 +407,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: D:/cprogram/CH32V307_base_project_clion/cmake-build-debug
 
-build all: phony CH32V305_DAP.elf
+build all: phony CH32V307.elf
 
 # =============================================================================
 # Built-in targets
@@ -410,14 +416,14 @@ build all: phony CH32V305_DAP.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeNinjaFindMake.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake D$:/cprogram/CH32V307_base_project_clion/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake D$:/cprogram/CH32V307_base_project_clion/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeNinjaFindMake.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake D$:/cprogram/CH32V307_base_project_clion/CMakeLists.txt: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeASMInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestASMCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake D$:/cprogram/CH32V307_base_project_clion/CMakeLists.txt: phony
 
 
 #############################################

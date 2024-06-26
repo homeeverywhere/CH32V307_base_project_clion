@@ -36,11 +36,14 @@ int main(void)
     check_rst_src();
     self_check();
 
-    printf("double 类型的字节数是 %u 字节.\n",sizeof(double));
-    printf("Enter main loop.\n");
+    printf("\rdouble 类型的字节数是 %u 字节.\n",sizeof(double));
+    printf("\rEnter main loop.\n");
+    printf("\rmain loop.\n");
+
     while(1)
     {
-        Delay_Ms(1000);
+//        Delay_Ms(1000);
+//        printf("\rmain loop.\n");
     }
 }
 
